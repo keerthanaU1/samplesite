@@ -1,0 +1,130 @@
+.nav-back{
+    color:black;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(2.0px);
+    -webkit-backdrop-filter: blur(1.3px);
+    height:8em;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 80vw;
+    border-bottom: 2px solid white;
+}
+.menu-items:hover{
+    cursor: url("assets/cursor-img-hover.png"),auto;
+}
+.min-vh{
+    height: 8em;
+}
+.nav-text{
+    padding-left: 10px;
+}
+body{
+    cursor: url("assets/cursor-img.png"),auto;
+}
+.caro-heading{
+    color:grey;
+    font-size: 60px;
+}
+.caro-anime{
+    animation-name: sample;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation: sample 3s;
+}
+@keyframes sample {
+    0%   {opacity: 0;top:200px;}
+    100%  {opacity: 1;top:0px;}
+  }
+.icon-hide{
+    display: none;
+}
+.button{
+    height:50px;
+    width: 200px;
+    padding: 10px;
+    border-radius:15px;
+    background-color: grey;
+    border-width: 0px;
+    color: white;
+}
+.fa-infinity{
+    text-decoration: underline;
+}
+.button:hover {
+    cursor: url("assets/cursor-img-hover.png"),auto;
+    height:50px;
+    width: 200px;
+    padding: 10px;
+    border-radius:15px;
+    background-color: grey;
+    border-width: 0px;
+    color: white;
+}
+.caro-div{
+    position: relative;
+}
+.myVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.caro-img-2{
+    background-image: url("assets/caro-img-2.jpeg");
+    height: 100vh;
+    background-size: cover;
+}
+.caro-img-3{
+    background-image: url("assets/caro-img-3.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  text-align: right;
+  background-color: transparent;
+  backdrop-filter: blur(10.0px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ede1e1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #4a4848;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right:5px;
+  font-size: 36px;
+}
+.menu-icon{
+    color:white;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 50px;}
+  .sidenav a {font-size: 18px;}
+}
+
